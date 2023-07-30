@@ -12,11 +12,11 @@ In this project, we discuss the use of Tenrec dataset for the cold start tast in
 The datasets used are:
 * Tenrec Data [Download](https://static.qblv.qq.com/qblv/h5/algo-frontend/tenrec_dataset.html):
 The Tenrec dataset suite is a collection of user behavior logs from Tencent's recommendation platforms, QQ BOW (QB) and QQ KAN (QK). The dataset includes user feedback from four different scenarios: QK-video, QK-article, QB-video, and QB-article. In the QK/QB platforms, items can be either news articles or videos.
-    1. cold_data.csv
-    2. cold_data_1.csv
-    3. cold_data_0.7.csv
-    4. cold_data_0.3.csv
-    5. sbr_data_1M.csv
+1. cold_data.csv
+2. cold_data_1.csv
+3. cold_data_0.7.csv
+4. cold_data_0.3.csv
+5. sbr_data_1M.csv
 * ratings_Beauty.csv [Download](https://www.kaggle.com/datasets/skillsmuggler/amazon-ratings): 
 The Amazon - Ratings (Beauty Products) dataset is a collection of user-generated ratings and reviews related to beauty products available on Amazon's e-commerce platform. It contains information about the interactions between users and various beauty items, providing valuable data for building and evaluating recommendation systems and sentiment analysis models.
 
@@ -41,16 +41,16 @@ pip install -r requirements.txt
 
 ## Benchmark
 This repository includes 4 notebooks:
-    1. `Tenrec_visualization.ipynb`: contains statistical information about the Tenrec's cold_start datasets, in addition to the sbr_data_1M dataset.
-    2. `amazon_ratings.ipynb`: contains statistical information about the Amazon Beauty Product Reviews dataset.
-    3. `main-Bert4Rec.ipynb`: contains the BERT4Rec models' training using the different pre-processing methods.
-    4. `main_peter.ipynb`: contains the Peterrec models' training using the different pre-processing methods.
+1. `Tenrec_visualization.ipynb`: contains statistical information about the Tenrec's cold_start datasets, in addition to the sbr_data_1M dataset.
+2. `amazon_ratings.ipynb`: contains statistical information about the Amazon Beauty Product Reviews dataset.
+3. `main-Bert4Rec.ipynb`: contains the BERT4Rec models' training using the different pre-processing methods.
+4. `main_peter.ipynb`: contains the Peterrec models' training using the different pre-processing methods.
 
 In addition to the use of 4 packages, which are:
-    1. `bert4pytorch.py`: BERT4Rec model building
-    2. `peter4pytorch.py`: Peterrec model building
-    3. `preprocessing.py`: includes the 6 pre-processing techniques applied on the datasets
-    4. `train.py`: for training the models.
+1. `bert4pytorch.py`: BERT4Rec model building
+2. `peter4pytorch.py`: Peterrec model building
+3. `preprocessing.py`: includes the 6 pre-processing techniques applied on the datasets
+4. `train.py`: for training the models.
 
 #### The project is divided into two parts for the two models. 
 * For BERT4Rec, run `main-Bert4Rec.ipynb`
